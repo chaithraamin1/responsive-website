@@ -1,0 +1,134 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 10px 8%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+nav .logo {
+    width: 160px;
+    margin-right: 20px;
+}
+
+.nav-links{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+}
+.nav-links .btn-sign-up {
+    padding: 8px 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    color: black;
+
+}
+
+.content-box {
+    margin-top: 150px;
+    color: #fff;
+}
+
+.content-box h1 {
+    font-size: 55px !important;
+}
+
+.search-box {
+    background-color: white;
+    width: fit-content;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.search-box img {
+    width: 30px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 600px;
+}
+
+.search-box button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.search-box button img {
+    width: 22px;
+}
+
+.content-box span {
+    margin: 20px 0;
+    display: block;
+}
+
+.arrow {
+    margin-top: 40px;
+}
+
+.arrow img {
+    width: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-sizing: content-box;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+// media queries
+@media screen and (max-width:700px) {
+    .search-box input {
+        width: 239px;
+        box-sizing: border-box;
+    }
+    .nav-logo{
+          flex-basis: 100%;
+          margin-bottom: 10px;
+          text-align: center;
+    }
+    .nav-links{
+        justify-content: center;
+    }
+    .nav-links a{
+            margin: 0 10px;
+    }
+    .nav-links .btn-sign-up{
+        background: transparent;
+        padding: 0;
+        color: #fff;
+    }
+    .content-box h1 {
+        font-size: 30px !important;
+    }
+    .content-box{
+        margin-top: 30px;
+    }
+    .search-box{
+        padding: 10px 20px;
+    }
+    .search-box button  img{
+        width: 16px;
+    }
+}
